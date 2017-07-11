@@ -27,10 +27,7 @@ export default StyleSheet.create({
     },
 
     cancelContainer: {
-      borderRadius:BORDER_RADIUS,
       flexShrink: 1,
-      marginBottom: 8,
-      padding: PADDING,
       textAlign: 'center',
       alignSelf: 'center',
     },
@@ -49,7 +46,10 @@ export default StyleSheet.create({
     },
 
     cancelStyle: {
+        borderRadius: BORDER_RADIUS,
         width: width * 0.8,
+        backgroundColor: 'rgba(255,255,255,0.8)',
+        padding: PADDING
     },
 
     cancelTextStyle: {
