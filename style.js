@@ -30,6 +30,7 @@ export default StyleSheet.create({
       flexShrink: 1,
       textAlign: 'center',
       alignSelf: 'center',
+      width: '100%',
     },
 
     selectStyle: {
@@ -47,7 +48,7 @@ export default StyleSheet.create({
 
     cancelStyle: {
         borderRadius: BORDER_RADIUS,
-        width: width * 0.8,
+        width: '100%',
         backgroundColor: 'rgba(255,255,255,0.8)',
         padding: PADDING
     },
