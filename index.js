@@ -6,7 +6,6 @@ import React,{
 
 import {
     View,
-    Dimensions,
     Modal,
     Text,
     ScrollView,
@@ -133,8 +132,6 @@ export default class ModalPicker extends BaseComponent {
                 return this.renderOption(item);
             }
         });
-
-        const {height, width} = Dimensions.get('window');
 
         return (
             <View style={[styles.overlayStyle, this.props.overlayStyle]} key={'modalPicker'+(componentIndex++)}>
