@@ -49,6 +49,7 @@ export default StyleSheet.create({
     },
 
     cancelStyle: {
+        width: width * 0.8,
     },
 
     cancelTextStyle: {
