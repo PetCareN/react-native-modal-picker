@@ -10,6 +10,8 @@ const HIGHLIGHT_COLOR = 'rgba(0,118,255,0.9)';
 export default StyleSheet.create({
 
     overlayStyle: {
+        width: width,
+        height: height,
         padding:width*0.1,
         justifyContent: 'center',
         backgroundColor: 'rgba(0,0,0,0.7)'
@@ -42,6 +44,7 @@ export default StyleSheet.create({
 
     cancelStyle: {
         borderRadius: BORDER_RADIUS,
+        width: width * 0.8,
         backgroundColor: 'rgba(255,255,255,0.8)',
         padding: PADDING
     },
