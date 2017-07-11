@@ -31,7 +31,7 @@ export default StyleSheet.create({
       flexShrink: 1,
       marginBottom: 8,
       padding: PADDING,
-      backgroundColor:'rgba(255,255,255,0.8)',
+      textAlign: 'center',
     },
 
     selectStyle: {
