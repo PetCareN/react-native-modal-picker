@@ -6,7 +6,6 @@ import React,{
 
 import {
     View,
-    StyleSheet,
     Dimensions,
     Modal,
     Text,
@@ -135,8 +134,10 @@ export default class ModalPicker extends BaseComponent {
             }
         });
 
+        const {height, width} = Dimensions.get('window');
+
         return (
-            <View style={[styles.overlayStyle, this.props.overlayStyle]} key={'modalPicker'+(componentIndex++)}>
+            <View style={[{height: height, width: width}, styles.overlayStyle, this.props.overlayStyle]} key={'modalPicker'+(componentIndex++)}>
                 <View style={[styles.optionContainer, this.props.optionContainer]}>
                     <ScrollView {...this.props.scrollProps}>
                         <View style={{paddingHorizontal:10}}>
@@ -146,7 +147,7 @@ export default class ModalPicker extends BaseComponent {
                 </View>
                 <View style={styles.cancelContainer}>
                     <TouchableOpacity onPress={this.close}>
-                        <View style={[styles.cancelStyle, this.props.cancelStyle]}>
+                        <View style={[{width: width * 0.8}, styles.cancelStyle, this.props.cancelStyle]}>
                             <Text style={[styles.cancelTextStyle,this.props.cancelTextStyle]}>{this.props.cancelText}</Text>
                         </View>
                     </TouchableOpacity>
