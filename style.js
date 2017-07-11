@@ -28,7 +28,6 @@ export default StyleSheet.create({
 
     cancelContainer: {
       flexShrink: 1,
-      textAlign: 'center',
       alignSelf: 'center',
       width: '100%',
     },
